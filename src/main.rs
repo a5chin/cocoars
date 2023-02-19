@@ -7,5 +7,10 @@ fn main() {
         Err(e) => panic!("{e}"),
     };
 
-    println!("{:?}", c.categories);
+    let df = match c.create_df() {
+        Ok(d) => d,
+        Err(e) => panic!("{e}")
+    };
+
+    println!("{df:?}");
 }

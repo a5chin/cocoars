@@ -2,13 +2,13 @@ use serde::{Serialize, Deserialize};
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Annotation {
-    segmentation: SegmentationUnion,
-    area: f64,
-    iscrowd: i8,
-    image_id: i64,
-    bbox: Vec<f64>,
-    category_id: i8,
-    id: i64,
+    pub segmentation: SegmentationUnion,
+    pub area: f64,
+    pub iscrowd: i32,
+    pub image_id: i64,
+    pub bbox: Vec<f64>,
+    pub category_id: i32,
+    pub id: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
