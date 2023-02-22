@@ -2,12 +2,12 @@ use serde::{Serialize, Deserialize};
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Image {
-    license: i8,
-    file_name: String,
-    coco_url: String,
-    height: i16,
-    width: i16,
-    date_captured: String,
-    flickr_url: String,
-    id: i64,
+    pub license: i8,
+    pub file_name: String,
+    pub coco_url: String,
+    pub height: i32,
+    pub width: i32,
+    pub date_captured: String,
+    pub flickr_url: String,
+    pub id: i64,
 }
